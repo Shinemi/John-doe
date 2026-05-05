@@ -14,6 +14,7 @@
     background-color: var(--darkblue);
     color: white;
     font-family: var(--opensans);
+    font-size: 16px;
 }
 
 li{
@@ -89,4 +90,69 @@ footer h2{
     align-items: center;
     font-size: 18px;
     font-weight: 400;
+}
+
+#hero{
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#hero img{
+    width: 664px;
+    height: 664px;
+}
+
+#hero div{
+    max-width: 570px;
+    text-align: left;
+}
+
+h1{
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#hero p{
+    margin: 10px 0px;
+}
+
+#casseCouille{
+    padding-bottom: 30px;
+}
+
+#hero .CTA{
+    margin-top: 30px;
+}
+
+#formation{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#formation img{
+    width: 800px;
+}
+
+#formation>div{
+    display: flex;
+}
+#formation>div>div{
+    max-width: 450px;
+}
+
+#formation>div>div>h2, #formation>div>div>p{
+    background-color: var(--rose);
+    padding: 50px;
 }
