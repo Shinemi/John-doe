@@ -197,3 +197,61 @@ h2{
     bottom: -20px;
 
 }
+
+#formationSuite{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+}
+
+#formationSuite img{
+    width: 800px;
+}
+
+
+#formationSuite>div{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#formationSuite article{
+    max-width: 450px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 15%;
+    bottom: 10%;
+}
+
+#formationSuite article,#formationSuite article h2,#formationSuite article p{
+    background-color: var(--rose);
+}
+
+#formationSuite article p{
+    padding: 20px 0px;
+}
+#formationSuite article h2{
+    padding: 20px 0px;
+    font-size: 21px;
+}
+
+#formationSuite article div{
+    padding: 50px;
+    position: relative;
+}
+
+#formationSuite .CTA{
+    background-color: var(--darkblue);
+    border: solid 1px white;
+    position: absolute;
+    left: 33%;
+    right: 33%;
+    bottom: -20px;
+
+}
