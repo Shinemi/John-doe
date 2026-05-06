@@ -11,10 +11,14 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--darkblue);
     color: white;
     font-family: var(--opensans);
     font-size: 16px;
+}
+
+body>div{
+    background-color: var(--darkblue);
+
 }
 
 li{
@@ -133,7 +137,7 @@ h1{
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 100px 0px;
 }
 
 h2{
@@ -144,15 +148,52 @@ h2{
 #formation img{
     width: 800px;
 }
+#formation>h2{
+    align-self: center;
+    padding-bottom: 40px;
+}
 
 #formation>div{
     display: flex;
-}
-#formation>div>div{
-    max-width: 450px;
+    justify-content: flex-start;
+    position: relative;
 }
 
-#formation>div>div>h2, #formation>div>div>p{
+#formation article{
+    max-width: 450px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    top: 15%;
+    bottom: 10%;
+}
+
+#formation article,#formation article h2,#formation article p{
     background-color: var(--rose);
+}
+
+#formation article p{
+    padding: 20px 0px;
+}
+#formation article h2{
+    padding: 20px 0px;
+    font-size: 21px;
+}
+
+#formation article div{
     padding: 50px;
+    position: relative;
+}
+
+#formation .CTA{
+    background-color: var(--darkblue);
+    border: solid 1px white;
+    position: absolute;
+    left: 33%;
+    right: 33%;
+    bottom: -20px;
+
 }
