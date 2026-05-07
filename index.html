@@ -15,7 +15,7 @@
                 <img src="./img/Logo.png" alt="Logo">
                 Développeur Web et Web Mobile
             </a>
-            <nav>
+            <nav class="fadeInUp">
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="#">Qui suis-je ?</a></li>
@@ -26,10 +26,26 @@
                 <a href="#contactModal" class="CTA">Contactez-moi</a>
             </nav>
         </header>
+
+        <div id="contactModal" class="modal">
+            <div class="modal_content">
+                <span>
+                    <h2>Contact</h2>
+                    <a href="#" class="modal_close">&times;</a>
+                </span>
+                
+                <form action="">
+                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea name="textarea" id="textarea" placeholder="Your message" required></textarea>
+                    <input type="submit" class="CTA">
+                </form>
+            </div>
+        </div>
     
         <main>
     
-            <section id="hero">
+            <section id="hero" class="fadeInUp">
                     <div>
                         <h1>John Doe - Développeur web et web mobile</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores</p>
@@ -49,12 +65,27 @@
                         libero ut nobis sed magni facere blanditiis assumenda. Enim vero
                         perspiciatis beatae animi!</p>
     
-                        <a href="#contact" class="CTA">Contactez-moi</a>
+                        <a href="#contactModal2" class="CTA">Contactez-moi</a>
     
                     </div>
                     <img src="./img/moi.png" alt="moi">
             </section>
-    
+            
+            <div id="contactModal2" class="modal2">
+                    <div class="modal_content">
+                        <span>
+                            <h2>Contact</h2>
+                            <a href="#" class="modal_close">&times;</a>
+                        </span>
+                        
+                        <form action="">
+                            <input type="text" id="name" placeholder="Your name" required>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <textarea name="textarea" id="textarea" placeholder="Your message" required></textarea>
+                            <input type="submit" class="CTA">
+                        </form>
+                    </div>
+                </div>
     
             <section id="formation">
                 <h2>Ma Formation</h2>
@@ -95,13 +126,131 @@
             </section>
     
     
-            <section>
+            <section id="compétences">
+                <h2>Mes compétences</h2>
+                <article>
+
+                    <div>
+                     <details name="requirements">
+                            <summary>Langages de programmation</summary>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>PHP</li>
+                                <li>Python</li>
+                            </ul>
+                        </details>
+                        <details name="requirements">
+                            <summary>Frameworks et bibliothèques</summary>
+                            <ul>
+                                <li>Front-end
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>Angular</li>
+                                        <li>Vus.js</li>
+                                        <li>Jquery</li>
+                                        <li>Bootsrap</li>
+                                    </ul>
+                                </li>
+                                <li>Back-end
+                                    <ul>
+                                        <li>Node.js</li>
+                                        <li>Express.js</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </details>
+                        <details name="requirements">
+                            <summary>Bases de données</summary>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>SQLite</li>
+                            </ul>
+                        </details>
+                        <details name="requirements">
+                            <summary>Outils de développement</summary>
+                            <ul>
+                                <li>Git et Github</li>
+                                <li>Babel</li>
+                                <li>Visual Studio Code</li>
+                            </ul>
+                        </details>
+                    </div>
+                    <div>
+                        <details name="requirements">
+                            <summary>Conception Web</summary>
+                            <ul>
+                                <li>Responsive Web Design</li>
+                                <li>Connaissane des principes UX/UI</li>
+                                <li>Adobe XD / Figma / Sketch</li>
+                            </ul>
+                        </details>
+                        <details name="requirements">
+                            <summary>Services Web</summary>
+                            <ul>
+                                <li>APIs Rest</li>
+                                <li>GraphQL</li>
+                            </ul>
+                        </details>
+        
+                        <details name="requirements">
+                            <summary>Sécurité</summary>
+                            <ul>
+                                <li>Principe de sécurité web (OWASP)</li>
+                                <li>Gestion des sessions et des cookies</li>
+                                <li>Authentification et autorisation</li>
+                                <li>SSL/TLS</li>
+                            </ul>
+                        </details>
     
+                        <details name="requirements">
+                            <summary>Autres compétences</summary>
+                            <ul>
+                                <li>Testing et débogage</li>
+                                <li>Performances et optimisations</li>
+                                <li>SEO (Search Engine Optimisation)</li>
+                                <li>Accéssibilité Web (WCAG)</li>
+                                <li>Gestion de projet et collaboration en équipe</li>
+                                <li>Veille technologique et apprentissage continu</li>
+                            </ul>
+                        </details>
+                    </div>
+                </article>
             </section>
     
     
-            <section>
+            <section id="mesProjets">
+                <div>
+                    <h2>Mes projets</h2>
+                    <a href="#" class="CTA">Voir tous mes projets</a>
+                </div>
+                <div>
+
+                    <article>
+                        <img src="./img/homekey.png" alt="projetimg">
+                        <h3>Home Key - Intégration HTML & CSS</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero perferendis in ad laboriosam similique rem laudantium dolor explicabo impedit, sequi inventore, facere ullam fugiat nulla ab voluptas voluptatum quis dolores.</p>
+                        <a href="#" class="CTA">Lire la suite</a>
     
+                    </article>
+                    <article>
+                        <img src="./img/vividly.png" alt="projetimg">
+                        <h3>Vividly - Intégration Mobile First</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero perferendis in ad laboriosam similique rem laudantium dolor explicabo impedit, sequi inventore, facere ullam fugiat nulla ab voluptas voluptatum quis dolores.</p>
+                        <a href="#" class="CTA">Lire la suite</a>
+    
+                    </article>
+                    <article>
+                        <img src="./img/johndoe.png" alt="projetimg">
+                        <h3>Portfolio de Développeur Web</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero perferendis in ad laboriosam similique rem laudantium dolor explicabo impedit, sequi inventore, facere ullam fugiat nulla ab voluptas voluptatum quis dolores.</p>
+                        <a href="#" class="CTA">Lire la suite</a>
+    
+                    </article>
+                </div>
             </section>
     
         </main>
