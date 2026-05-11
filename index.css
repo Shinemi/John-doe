@@ -607,4 +607,8 @@ input[type="submit"]{
         gap: 30px;
         align-items: center;
     }
+
+    .modal2, .modal{
+        max-width: 250px;
+    }
 }
