@@ -1,0 +1,52 @@
+:root{
+    --rose: #e7174a;
+    --darkblue: #011826;
+    --lightblue:#0c8ce9;
+    --opensans: "Open Sans";
+    --raleway: "Raleway" 
+}
+
+#hero2 {
+    background-color:var(--rose);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    align-items: center;
+}
+
+#formation2{
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    align-items: center;
+    padding: 150px 10px;
+}
+
+#formation2 img{
+    max-width: 680px;
+    height: 100%;
+    object-fit: cover;
+}
+
+#formation2 article{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media screen and (max-width:1140px){
+    #formation2{
+        flex-direction: column;
+        gap: 80px;
+    }
+    #formation2 article{
+        max-width: 680px;
+    }
+}
+
+@media screen and (max-width:768px){
+    #formation2 img{
+        width: 90vw;
+    }
+}

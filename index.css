@@ -204,9 +204,10 @@ h2{
     background-color: var(--darkblue);
     border: solid 1px white;
     position: absolute;
-    left: 33%;
-    right: 33%;
+    width: fit-content;
     bottom: -20px;
+    display: flex;
+    justify-self: center;
     transition: all 0.2s ease-in-out;
     &:hover{
         background-color: var(--rose);
@@ -267,9 +268,10 @@ h2{
     background-color: var(--darkblue);
     border: solid 1px white;
     position: absolute;
-    left: 33%;
-    right: 33%;
+    width: fit-content;
     bottom: -20px;
+    display: flex;
+    justify-self: center;
     transition: all 0.2s ease-in-out;
     &:hover{
         background-color: var(--rose);
@@ -284,6 +286,7 @@ h2{
     flex-direction: column;
     align-items: center;
     margin: auto;
+    padding: 0 10px;
     padding-bottom: 100px;
 }
 
@@ -576,11 +579,32 @@ input[type="submit"]{
     }
 
     #formation img, #formationSuite img{
-        max-width: 90vw;
+        max-width: 70vw;
         object-fit: contain;
     }
 
     #formation article, #formationSuite article{
         position: relative;
+    }
+
+    #formation>div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #formationSuite>div {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #compétences article {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #mesProjets>div {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
     }
 }
